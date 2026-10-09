@@ -1,217 +1,957 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="color-scheme" content="light dark">
-  <title>finance — online banking</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="color-scheme"
+        content="light dark"
+    >
+
+    <title>
+        Finance | Online Banking
+    </title>
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+         ===================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         CSS
+         ===================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
 </head>
 
+
 <body>
-  <div class="site-shell">
 
-    <header class="site-header">
-      <a class="brand" href="#" aria-label="Finance home">
-        <span class="brand-mark" aria-hidden="true">
-          <span></span><span></span><span></span><span></span>
-        </span>
-        <span class="brand-copy">
-          <strong>finance</strong>
-          <small>online banking</small>
-        </span>
-      </a>
 
-      <nav class="desktop-nav" aria-label="Primary navigation">
-        <a href="#overview">Overview</a>
-        <a href="#activity">Activity</a>
-        <a href="#services">Services</a>
-      </nav>
+    <!-- =====================================================
+         THEME CONTROLS
+         NO JAVASCRIPT
+         ===================================================== -->
 
-      <a class="header-link" href="#contact">Sign in <span>↗</span></a>
-    </header>
+    <input
+        type="radio"
+        name="theme"
+        id="theme-light"
+        class="theme-radio"
+        checked
+    >
 
-    <main>
-      <section class="hero" id="overview">
-        <div class="hero-copy">
-          <p class="eyebrow">01 — online banking</p>
-          <h1>money, <span>without</span> the noise.</h1>
-          <p class="hero-text">
-            A simple place to see your balance, follow your activity,
-            and stay in control of everyday finances.
-          </p>
+    <input
+        type="radio"
+        name="theme"
+        id="theme-dark"
+        class="theme-radio"
+    >
 
-          <div class="hero-actions">
-            <a class="button button-dark" href="#activity">View account <span>↗</span></a>
-            <a class="text-link" href="#services">Explore services <span>→</span></a>
-          </div>
-        </div>
 
-        <div class="hero-card card">
-          <div class="card-top">
-            <span class="micro">available balance</span>
-            <span class="pill">active</span>
-          </div>
 
-          <div class="balance">$24,680.50</div>
+    <!-- =====================================================
+         SITE
+         ===================================================== -->
 
-          <div class="balance-meta">
-            <span>+12.8% this month</span>
-            <span>•••• 4821</span>
-          </div>
+    <div class="site">
 
-          <div class="card-line"></div>
 
-          <div class="mini-stats">
-            <div>
-              <span class="micro">income</span>
-              <strong>$8,420</strong>
+        <!-- =================================================
+             HEADER
+             ================================================= -->
+
+        <header class="header">
+
+
+            <!-- =================================================
+                 LOGO
+                 ================================================= -->
+
+            <a
+                href="#"
+                class="brand"
+                aria-label="Finance home"
+            >
+
+
+                <span
+                    class="brand-globe"
+                    aria-hidden="true"
+                >
+
+                    <span class="globe-vertical vertical-left"></span>
+
+                    <span class="globe-vertical vertical-center"></span>
+
+                    <span class="globe-vertical vertical-right"></span>
+
+                    <span class="globe-horizontal horizontal-top"></span>
+
+                    <span class="globe-horizontal horizontal-middle"></span>
+
+                    <span class="globe-horizontal horizontal-bottom"></span>
+
+                </span>
+
+
+                <span class="brand-name">
+
+                    <strong>
+                        finance
+                    </strong>
+
+                    <small>
+                        ONLINE BANKING
+                    </small>
+
+                </span>
+
+
+            </a>
+
+
+
+            <!-- =================================================
+                 NAVIGATION
+                 ================================================= -->
+
+            <nav
+                class="nav"
+                aria-label="Main navigation"
+            >
+
+                <a href="#account">
+                    account
+                </a>
+
+                <a href="#activity">
+                    activity
+                </a>
+
+                <a href="#services">
+                    services
+                </a>
+
+            </nav>
+
+
+
+            <!-- =================================================
+                 HEADER ACTIONS
+                 ================================================= -->
+
+            <div class="header-right">
+
+
+                <!-- THEME BUTTONS -->
+
+                <div class="theme-controls">
+
+                    <label
+                        for="theme-light"
+                        class="theme-button light-button"
+                    >
+                        light
+                    </label>
+
+
+                    <label
+                        for="theme-dark"
+                        class="theme-button dark-button"
+                    >
+                        dark
+                    </label>
+
+                </div>
+
+
+
+                <!-- SIGN IN -->
+
+                <a
+                    href="#"
+                    class="sign-in"
+                >
+
+                    sign in
+
+                    <span>
+                        ↗
+                    </span>
+
+                </a>
+
+
             </div>
-            <div>
-              <span class="micro">spent</span>
-              <strong>$3,180</strong>
+
+
+        </header>
+
+
+
+        <!-- =====================================================
+             MAIN
+             ===================================================== -->
+
+        <main>
+
+
+            <!-- =================================================
+                 HERO
+                 ================================================= -->
+
+            <section
+                class="hero"
+                id="account"
+            >
+
+
+                <div class="hero-copy">
+
+
+                    <p class="label">
+                        01 — your money
+                    </p>
+
+
+                    <h1>
+
+                        banking made
+
+                        <span>
+                            quiet.
+                        </span>
+
+                    </h1>
+
+
+                    <p class="hero-description">
+                        Monitor your money :|
+                    </p>
+
+
+                    <div class="hero-actions">
+
+
+                        <a
+                            href="#activity"
+                            class="primary-button"
+                        >
+
+                            view account
+
+                            <span>
+                                ↗
+                            </span>
+
+                        </a>
+
+
+                        <a
+                            href="#services"
+                            class="text-link"
+                        >
+
+                            explore services →
+
+                        </a>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- =================================================
+                     ACCOUNT
+                     ================================================= -->
+
+                <div class="account">
+
+
+                    <div class="account-top">
+
+
+                        <span class="label">
+                            available balance
+                        </span>
+
+
+                        <span class="status">
+                            active
+                        </span>
+
+
+                    </div>
+
+
+
+                    <div class="balance">
+
+                        $24,680.50
+
+                    </div>
+
+
+
+                    <div class="account-meta">
+
+
+                        <span>
+                            +12.8% this month
+                        </span>
+
+
+                        <span>
+                            •••• 4821
+                        </span>
+
+
+                    </div>
+
+
+
+                    <div class="account-rule"></div>
+
+
+
+                    <div class="account-stats">
+
+
+                        <div class="stat">
+
+                            <span class="label">
+                                income
+                            </span>
+
+                            <strong>
+                                $8,420
+                            </strong>
+
+                        </div>
+
+
+                        <div class="stat">
+
+                            <span class="label">
+                                spent
+                            </span>
+
+                            <strong>
+                                $3,180
+                            </strong>
+
+                        </div>
+
+
+                        <div class="stat">
+
+                            <span class="label">
+                                saved
+                            </span>
+
+                            <strong>
+                                $2,450
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 ACTIVITY
+                 ================================================= -->
+
+            <section
+                class="section"
+                id="activity"
+            >
+
+
+                <div class="section-header">
+
+
+                    <p class="label">
+                        02 — activity
+                    </p>
+
+
+                    <span class="section-note">
+                        latest transactions
+                    </span>
+
+
+                </div>
+
+
+
+                <div class="activity-layout">
+
+
+                    <!-- =================================================
+                         TRANSACTIONS
+                         ================================================= -->
+
+                    <div class="transactions">
+
+
+                        <div class="transaction-head">
+
+                            <span>
+                                transaction
+                            </span>
+
+                            <span>
+                                date
+                            </span>
+
+                            <span>
+                                amount
+                            </span>
+
+                        </div>
+
+
+
+                        <!-- AMAZON -->
+
+                        <div class="transaction">
+
+
+                            <div class="merchant">
+
+                                <span class="merchant-icon">
+                                    A
+                                </span>
+
+
+                                <span class="merchant-info">
+
+                                    <strong>
+                                        Amazon
+                                    </strong>
+
+                                    <small>
+                                        shopping
+                                    </small>
+
+                                </span>
+
+                            </div>
+
+
+                            <span class="transaction-date">
+                                06 OCT
+                            </span>
+
+
+                            <strong class="transaction-amount">
+                                −$84.20
+                            </strong>
+
+
+                        </div>
+
+
+
+                        <!-- SPOTIFY -->
+
+                        <div class="transaction">
+
+
+                            <div class="merchant">
+
+                                <span class="merchant-icon">
+                                    S
+                                </span>
+
+
+                                <span class="merchant-info">
+
+                                    <strong>
+                                        Spotify
+                                    </strong>
+
+                                    <small>
+                                        subscription
+                                    </small>
+
+                                </span>
+
+                            </div>
+
+
+                            <span class="transaction-date">
+                                05 OCT
+                            </span>
+
+
+                            <strong class="transaction-amount">
+                                −$10.99
+                            </strong>
+
+
+                        </div>
+
+
+
+                        <!-- SALARY -->
+
+                        <div class="transaction">
+
+
+                            <div class="merchant">
+
+                                <span class="merchant-icon">
+                                    +
+                                </span>
+
+
+                                <span class="merchant-info">
+
+                                    <strong>
+                                        Salary deposit
+                                    </strong>
+
+                                    <small>
+                                        income
+                                    </small>
+
+                                </span>
+
+                            </div>
+
+
+                            <span class="transaction-date">
+                                04 OCT
+                            </span>
+
+
+                            <strong
+                                class="transaction-amount positive"
+                            >
+                                +$4,200.00
+                            </strong>
+
+
+                        </div>
+
+
+
+                        <!-- GROCERY -->
+
+                        <div class="transaction">
+
+
+                            <div class="merchant">
+
+                                <span class="merchant-icon">
+                                    G
+                                </span>
+
+
+                                <span class="merchant-info">
+
+                                    <strong>
+                                        Grocery Market
+                                    </strong>
+
+                                    <small>
+                                        food
+                                    </small>
+
+                                </span>
+
+                            </div>
+
+
+                            <span class="transaction-date">
+                                03 OCT
+                            </span>
+
+
+                            <strong class="transaction-amount">
+                                −$62.40
+                            </strong>
+
+
+                        </div>
+
+
+
+                        <a
+                            href="#"
+                            class="view-all"
+                        >
+
+                            view all transactions →
+
+                        </a>
+
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         BUDGET
+                         ================================================= -->
+
+                    <aside class="budget">
+
+
+                        <p class="label">
+                            monthly budget
+                        </p>
+
+
+                        <div class="budget-number">
+
+                            72<span>%</span>
+
+                        </div>
+
+
+                        <p class="budget-description">
+
+                            of your planned monthly
+                            budget remains.
+
+                        </p>
+
+
+                        <div class="budget-bar">
+
+                            <span></span>
+
+                        </div>
+
+
+                        <div class="budget-item">
+
+                            <span>
+                                budget used
+                            </span>
+
+                            <strong>
+                                28%
+                            </strong>
+
+                        </div>
+
+
+                        <div class="budget-item">
+
+                            <span>
+                                next payment
+                            </span>
+
+                            <strong>
+                                12 OCT
+                            </strong>
+
+                        </div>
+
+
+                    </aside>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 SERVICES
+                 ================================================= -->
+
+            <section
+                class="section"
+                id="services"
+            >
+
+
+                <div class="section-header">
+
+
+                    <p class="label">
+                        03 — services
+                    </p>
+
+
+                    <span class="section-note">
+                        simple tools
+                    </span>
+
+
+                </div>
+
+
+
+                <div class="services">
+
+
+                    <!-- PAYMENTS -->
+
+                    <a
+                        href="#"
+                        class="service"
+                    >
+
+
+                        <div class="service-top">
+
+                            <span>
+                                01
+                            </span>
+
+                            <span>
+                                ↗
+                            </span>
+
+                        </div>
+
+
+                        <h2>
+                            payments
+                        </h2>
+
+
+                        <p>
+
+                            Move money and pay bills
+                            from one focused place.
+
+                        </p>
+
+
+                    </a>
+
+
+
+                    <!-- SAVINGS -->
+
+                    <a
+                        href="#"
+                        class="service"
+                    >
+
+
+                        <div class="service-top">
+
+                            <span>
+                                02
+                            </span>
+
+                            <span>
+                                ↗
+                            </span>
+
+                        </div>
+
+
+                        <h2>
+                            savings
+                        </h2>
+
+
+                        <p>
+
+                            Keep your goals visible
+                            and make saving automatic.
+
+                        </p>
+
+
+                    </a>
+
+
+
+                    <!-- SECURITY -->
+
+                    <a
+                        href="#"
+                        class="service"
+                    >
+
+
+                        <div class="service-top">
+
+                            <span>
+                                03
+                            </span>
+
+                            <span>
+                                ↗
+                            </span>
+
+                        </div>
+
+
+                        <h2>
+                            security
+                        </h2>
+
+
+                        <p>
+
+                            Clear activity and straightforward
+                            account controls.
+
+                        </p>
+
+
+                    </a>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 CLOSING
+                 ================================================= -->
+
+            <section class="closing">
+
+
+                <p class="label">
+                    04 — our approach
+                </p>
+
+
+                <h2>
+
+                    less interface.
+
+                    <br>
+
+                    <span>
+                        more understanding.
+                    </span>
+
+                </h2>
+
+
+                <p class="closing-description">
+
+                    A banking experience designed
+                    around clarity, not decoration.
+
+                </p>
+
+
+            </section>
+
+
+        </main>
+
+
+
+        <!-- =====================================================
+             FOOTER
+             ================================================= -->
+
+        <footer class="footer">
+
+
+            <a
+                href="#"
+                class="footer-brand"
+            >
+
+                <strong>
+                    finance
+                </strong>
+
+                <small>
+                    online banking
+                </small>
+
+            </a>
+
+
+
+            <div class="footer-links">
+
+
+                <a href="#">
+                    privacy ↗
+                </a>
+
+
+                <a href="#">
+                    security ↗
+                </a>
+
+
+                <a href="#">
+                    contact ↗
+                </a>
+
+
             </div>
-            <div>
-              <span class="micro">saved</span>
-              <strong>$2,450</strong>
-            </div>
-          </div>
-        </div>
 
-        <div class="halftone halftone-hero" aria-hidden="true"></div>
-      </section>
 
-      <section class="section" id="activity">
-        <div class="section-heading">
-          <p class="section-label">02 — activity</p>
-          <p class="section-note">recent transactions</p>
-        </div>
 
-        <div class="activity-layout">
-          <article class="card activity-card">
-            <div class="activity-header">
-              <h2>latest movement</h2>
-              <a class="text-link" href="#">view all →</a>
-            </div>
+            <span class="copyright">
 
-            <div class="transaction">
-              <div class="transaction-icon">A</div>
-              <div class="transaction-main">
-                <strong>Amazon</strong>
-                <span>Shopping · Oct 06</span>
-              </div>
-              <strong class="amount negative">−$84.20</strong>
-            </div>
+                © 2026 finance
 
-            <div class="transaction">
-              <div class="transaction-icon">S</div>
-              <div class="transaction-main">
-                <strong>Spotify</strong>
-                <span>Subscription · Oct 05</span>
-              </div>
-              <strong class="amount negative">−$10.99</strong>
-            </div>
+            </span>
 
-            <div class="transaction">
-              <div class="transaction-icon">+</div>
-              <div class="transaction-main">
-                <strong>Salary deposit</strong>
-                <span>Income · Oct 04</span>
-              </div>
-              <strong class="amount positive">+$4,200.00</strong>
-            </div>
 
-            <div class="transaction">
-              <div class="transaction-icon">G</div>
-              <div class="transaction-main">
-                <strong>Grocery Market</strong>
-                <span>Food · Oct 03</span>
-              </div>
-              <strong class="amount negative">−$62.40</strong>
-            </div>
-          </article>
+        </footer>
 
-          <aside class="card quick-card">
-            <span class="micro">monthly overview</span>
-            <div class="overview-number">72<span>%</span></div>
-            <p>of your planned monthly budget remains.</p>
 
-            <div class="progress" aria-label="72 percent of budget remains">
-              <span></span>
-            </div>
+    </div>
 
-            <div class="quick-row">
-              <span>budget used</span>
-              <strong>28%</strong>
-            </div>
-            <div class="quick-row">
-              <span>next payment</span>
-              <strong>Oct 12</strong>
-            </div>
-          </aside>
-        </div>
-      </section>
 
-      <section class="section services" id="services">
-        <div class="section-heading">
-          <p class="section-label">03 — services</p>
-          <p class="section-note">everything in one place</p>
-        </div>
-
-        <div class="service-grid">
-          <article class="service-card">
-            <span class="service-number">01</span>
-            <h2>payments</h2>
-            <p>Send money and pay bills from one quiet, focused interface.</p>
-            <a class="text-link" href="#">learn more ↗</a>
-          </article>
-
-          <article class="service-card">
-            <span class="service-number">02</span>
-            <h2>savings</h2>
-            <p>Set aside money automatically and keep your goals visible.</p>
-            <a class="text-link" href="#">learn more ↗</a>
-          </article>
-
-          <article class="service-card">
-            <span class="service-number">03</span>
-            <h2>security</h2>
-            <p>Clear activity, secure access, and simple controls when you need them.</p>
-            <a class="text-link" href="#">learn more ↗</a>
-          </article>
-        </div>
-      </section>
-
-      <section class="statement card">
-        <div>
-          <p class="section-label">04 — simple by design</p>
-          <h2>your finances should feel<br><em>understandable.</em></h2>
-        </div>
-        <p class="statement-copy">
-          No unnecessary dashboards. No visual noise.
-          Just the information that helps you make the next decision.
-        </p>
-      </section>
-    </main>
-
-    <footer class="site-footer" id="contact">
-      <div class="footer-brand">
-        <strong>finance</strong>
-        <span>online banking</span>
-      </div>
-
-      <div class="footer-links">
-        <a href="#">Privacy ↗</a>
-        <a href="#">Security ↗</a>
-        <a href="#">Contact ↗</a>
-      </div>
-
-      <span class="copyright">© 2026 finance</span>
-    </footer>
-
-  </div>
 </body>
+
 </html>
